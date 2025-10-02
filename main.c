@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 {
     int answer=59;
     int num;
-    int trial; 
+    int trial=0; 
     
     do
     {
@@ -16,6 +16,8 @@ int main(int argc, char *argv[])
        printf("High!\n");
     else if(num < answer)
        printf("Low!\n");
+       
+    trial++;
 }
  
     while(num!=answer);
