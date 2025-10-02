@@ -3,22 +3,25 @@
 
 int main(int argc, char *argv[])
 {
-    int x;
-    int i;
-    int sum=0;
+    int answer=59;
+    int num;
+    int trial; 
     
-    printf("Input an number:");
-    scanf("%d", &x);
+    do
+    {
+    printf("Input a number:");
+    scanf("%i", &num);
     
-    if (x>0)
-        printf("absolute is %i.\n", x);
-    else
-        printf("absolute is %i.\n", -x);
-    for (i=1;i<=x;i++)
-        sum = sum + i ;
-   
-    printf("sum  is %i\n.", sum);
+    if (num > answer)
+       printf("High!\n");
+    else if(num < answer)
+       printf("Low!\n");
+}
+ 
+    while(num!=answer);
+    
+    printf("Congratulations! trial:%i\n.", trial);
      
-  system("PAUSE");	
-  return 0;
+    system("PAUSE");	
+    return 0;
 }
