@@ -3,27 +3,18 @@
 
 int main(int argc, char *argv[])
 {
-    int answer=59;
-    int num;
-    int trial=0; 
+    int x;
     
-    do
-    {
-    printf("Input a number:");
-    scanf("%i", &num);
+    printf("Input an integer:");
+    scanf("%d", &x);
     
-    if (num > answer)
-       printf("High!\n");
-    else if(num < answer)
-       printf("Low!\n");
-       
-    trial++;
-}
- 
-    while(num!=answer);
+    if (x>0)
+       printf("positive number.\n");
+    else if (x<0)
+       printf("negative number.\n");
+    else
+        printf("0.\n");
     
-    printf("Congratulations! trial:%i\n.", trial);
-     
     system("PAUSE");	
     return 0;
 }
